@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".app.CompanyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollViewCompany"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="183dp"
+                android:background="@drawable/bia_app"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:src="@drawable/avartar_company"
+                    app:civ_border_color="#C148DC"
+                    app:civ_border_width="2dp" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnBackAppCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="250dp"
+                    android:backgroundTint="#000000"
+                    android:src="@drawable/close" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView1602"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Khoản thu" />
+
+            <GridView
+                android:id="@+id/gvThuCompany"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="450dp"
+                android:numColumns="3" />
+
+            <TextView
+                android:id="@+id/textView1709"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Khoản chi" />
+
+            <GridView
+                android:id="@+id/gvChiCompany"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="700dp"
+                android:numColumns="3"/>
+
+            <Button
+                android:id="@+id/btnCheckTkCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#54BDED"
+                android:text="Kiểm tra tiết kiệm" />
+
+            <TextView
+                android:id="@+id/textView128"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Tiết kiệm" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgThuCompany"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/money" />
+
+                <TextView
+                    android:id="@+id/textView850"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Đã tiết kiệm được: "
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtTietKiemCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:text="00000000000000"
+                    android:textColor="#DD7D9E"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView5820"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Truy vấn thông tin" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnDataCompany"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="9dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/timkiem" />
+
+                <ImageButton
+                    android:id="@+id/btnAnhCompany"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/anh_bill" />
+
+                <ImageButton
+                    android:id="@+id/btnDoThiCompany"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dothi" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2380"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="27dp"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="Tìm kiếm" />
+
+                <TextView
+                    android:id="@+id/textView12370"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="62dp"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="Hóa đơn" />
+
+                <TextView
+                    android:id="@+id/textView2460"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="72dp"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="Đồ thị" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnFirstCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_up"
+        app:backgroundTint="#ffffff"
+        app:borderWidth="0dp" />
+</RelativeLayout>

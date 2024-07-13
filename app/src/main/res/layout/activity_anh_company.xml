@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".anh.AnhCompanyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButtonCloseAnhCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#000000"
+            android:src="@drawable/close" />
+
+        <TextView
+            android:id="@+id/textView310019"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Hình ảnh đã đăng"
+            android:textColor="#BF1A0D"
+            android:textSize="35sp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/txtAnhCompanyThu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ảnh khoản thu"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:layout_gravity="center" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAnhCompanyThu"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/list_anh_thu"/>
+
+        <TextView
+            android:id="@+id/txtLoadAnhCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đang tải hình ảnh ..."
+            android:textColor="#D61F5E"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/txtAnhCompanyChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ảnh khoản chi"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAnhCompanyChi"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/list_anh_chi"/>
+    </LinearLayout>
+</ScrollView>

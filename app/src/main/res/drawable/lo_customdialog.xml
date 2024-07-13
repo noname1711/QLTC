@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor ="#a6c0fe"
+                android:endColor = "#f68084" /> //dải màu lấy trên web
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+
+    <item android:bottom="3dp"
+        android:top="3dp"
+        android:left="3dp"
+        android:right="3dp">   //4 cái để chồng item này lên trên item bên trên
+        <shape android:shape="rectangle">
+            <solid android:color="#75042A" />   //màu nền
+            <corners android:radius ="20dp"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lo_customdialog"
+    android:orientation = "vertical">
+
+    <ImageButton
+        android:id="@+id/imgOutDialogLo"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:background="#75042A"
+        android:src="@drawable/close"
+        android:layout_gravity="right"/>
+
+    <ImageView
+        android:id="@+id/imageViewLo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/vit_tuc" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Sống chả biết tiết kiệm gì cả !"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#16E11E"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Sau tiêu tém tém lại nhé!"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:textColor="#16E11E"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

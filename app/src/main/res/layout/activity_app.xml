@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/layoutapp"
+    tools:context=".app.AppActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/ic_money" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:background="@drawable/layoutapp"
+        android:layout_height="37dp"
+        android:textColor="#614A48"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:text="@string/pick_cd" />
+
+    <ListView
+        android:id="@+id/lvCheDo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/txtLogOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/dx" />
+
+
+</LinearLayout>

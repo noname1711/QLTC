@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nenchedo"
+    android:orientation="vertical"
+    tools:context=".fetching.FetchingNuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButtonCloseNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#9795d4"
+            android:src="@drawable/close" />
+
+        <TextView
+            android:id="@+id/textView2622"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Dữ liệu đã được nhập"
+            android:textColor="#BF1A0D"
+            android:textSize="35sp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/textViewKhoanThuNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khoản Thu"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_gravity="center"  />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEmpThuNu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:listitem="@layout/list_fetching_nu_item_thu" />
+
+        <TextView
+            android:id="@+id/textViewKhoanChiNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khoản Chi"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEmpChiNu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/list_fetching_nu_item_chi" />
+
+        <TextView
+            android:id="@+id/txtLoadingDataNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đang tải dữ liệu ..."
+            android:textColor="#D61F5E"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</ScrollView>

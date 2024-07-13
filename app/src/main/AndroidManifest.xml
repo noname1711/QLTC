@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuảnLíTàiChính"
+        tools:targetApi="31">
+        <activity
+            android:name=".login.IntroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dothi.DoThiCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".anh.AnhCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".update.UpdateCompanyChiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".update.UpdateCompanyThuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fetching.FetchingCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chi.InsertionChiCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".thu.InsertionThuCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dothi.DoThiFamilyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".anh.AnhFamilyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".update.UpdateFamilyChiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".update.UpdateFamilyThuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chi.InsertionChiFamilyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".thu.InsertionThuFamilyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fetching.FetchingFamilyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dothi.DoThiNuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chat.ChatRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chat.CreateRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chat.PickChatFamilyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".anh.AnhNuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".app.AppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".update.UpdateNuChiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".update.UpdateNuThuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fetching.FetchingNuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chi.InsertionChiNuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".thu.InsertionThuNuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.ZoomImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".anh.AnhNamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dothi.DoThiNamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".update.UpdateNamChiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".update.UpdateNamThuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fetching.FetchingNamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chi.InsertionChiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".thu.InsertionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".app.CompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".app.FamilyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".app.NuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".app.NamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
