@@ -41,6 +41,3 @@ class EmpChiNuAdapter(private val dsChiNu : ArrayList<employeeChi>): RecyclerVie
     }
 }
 
-//vi du push
-//em nhan bang comment tren nay nhe
-//:v
