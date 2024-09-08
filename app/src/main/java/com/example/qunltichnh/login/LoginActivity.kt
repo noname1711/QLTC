@@ -13,6 +13,7 @@ import android.widget.Toast
 import com.example.qunltichnh.MainActivity
 import com.example.qunltichnh.NetworkChangeReceiver
 import com.example.qunltichnh.R
+import com.example.qunltichnh.app.AppActivity
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -130,11 +131,19 @@ class LoginActivity : AppCompatActivity() {
                         }
                     } else {
                         Toast.makeText(baseContext, R.string.chua_xt, Toast.LENGTH_SHORT).show()
+                        deleteUserAccount()
                     }
                 } else {
                     Toast.makeText(baseContext, R.string.dk_tb, Toast.LENGTH_SHORT).show()
+                    deleteUserAccount()
                 }
             }
+    }
+
+    private fun deleteUserAccount() {
+        auth.currentUser?.delete()?.addOnCompleteListener {
+
+        }
     }
 
     private fun dangKyTaiKhoan(email: String, pass: String) {
@@ -142,6 +151,8 @@ class LoginActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(baseContext, R.string.tao_tk_tc, Toast.LENGTH_SHORT).show()
+                    val i = Intent(this@LoginActivity, AppActivity::class.java)
+                    startActivity(i)
                 } else {
                     Toast.makeText(baseContext, R.string.tao_tk_tb, Toast.LENGTH_SHORT).show()
                 }
